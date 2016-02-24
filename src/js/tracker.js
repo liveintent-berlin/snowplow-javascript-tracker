@@ -543,7 +543,7 @@
 		 * Note: this is a RFC4122-compliant v4 UUID
 		 */
 		function createNewDomainUserId() {
-			return uuid.v4();
+			return configTrackerSiteId + "." + uuid.v4();
 		}
 
 		/*
