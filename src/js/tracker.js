@@ -540,14 +540,10 @@
 
 		/**
 		 * Generate a pseudo-unique ID to fingerprint this user
-		 * Note: this isn't a RFC4122-compliant UUID
+		 * Note: this is a RFC4122-compliant v4 UUID
 		 */
 		function createNewDomainUserId() {
-			return hash(
-				(navigatorAlias.userAgent || '') +
-					(navigatorAlias.platform || '') +
-					json2.stringify(browserFeatures) + Math.round(new Date().getTime() / 1000)
-			).slice(0, 16); // 16 hexits = 64 bits
+			return configTrackerSiteId + "." + uuid.v4();
 		}
 
 		/*
