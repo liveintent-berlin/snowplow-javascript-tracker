@@ -16,7 +16,7 @@ client-side tier of your websites and web apps.
 
 ## Find out more
 
-| Technical Docs                      | Setup Guide                  | Roadmap & Contributing               |         
+| Technical Docs                      | Setup Guide                  | Roadmap & Contributing               |
 |-------------------------------------|------------------------------|--------------------------------------|
 | [![i1][techdocs-image]][tech-docs] | [ ![i2][setup-image]][setup] | ![i3][roadmap-image]                 |
 | [Technical Docs][tech-docs]         | [Setup Guide][setup]         | _coming soon_                        |
@@ -66,7 +66,7 @@ Licensed under the [Simplified BSD][bsd] license.
 [piwik]: http://piwik.org/
 [piwikjs]: https://github.com/piwik/piwik/blob/master/js/piwik.js
 [piwikphp]: https://github.com/piwik/piwik/blob/master/piwik.php
-[bsd]: http://www.opensource.org/licenses/bsd-license.php 
+[bsd]: http://www.opensource.org/licenses/bsd-license.php
 [integrating]: /snowplow/snowplow/blob/master/docs/03_integrating_snowplowjs.md
 [selfhosting]: /snowplow/snowplow/blob/master/docs/04_selfhosting_snowplow.md
 [setup]: https://github.com/snowplow/snowplow/wiki/javascript-tracker-setup
@@ -80,7 +80,7 @@ Licensed under the [Simplified BSD][bsd] license.
 [travis-image]: https://travis-ci.org/snowplow/snowplow-javascript-tracker.png?branch=master
 [travis]: http://travis-ci.org/snowplow/snowplow-javascript-tracker
 [codeclimate-image]: https://codeclimate.com/github/snowplow/snowplow-javascript-tracker.png
-[codeclimate]: https://codeclimate.com/github/snowplow/snowplow-javascript-tracker      
+[codeclimate]: https://codeclimate.com/github/snowplow/snowplow-javascript-tracker
 [saucelabs]: https://saucelabs.com/u/snowplow
 [saucelabs-button-image]: https://saucelabs.com/buildstatus/snowplow
 [saucelabs-matrix-image]: https://saucelabs.com/browser-matrix/snowplow.svg

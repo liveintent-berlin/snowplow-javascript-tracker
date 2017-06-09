@@ -6,8 +6,12 @@
     "intern": "3.3.2",
     "dts-generator": "^2.0.0",
     "grunt-ts": "5.5.1",
+<<<<<<< c098ed8c0e2d503af50e775961a02e0794bc698e
     "typescript": "2.2.2",
     "@types/es6-shim": "0.31.34",
+=======
+    "typescript": "2.0.6",
+>>>>>>> TB-665 Upgrade to snowplow core 2.8.0 (#4)
     "@types/uuid": "^2.0.29"
   },
   "contributors": [

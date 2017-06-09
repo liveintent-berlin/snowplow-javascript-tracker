@@ -43,5 +43,5 @@
     "open source"
   ],
   "license": "Simplified BSD",
-  "private": false
+  "private": true
 }
