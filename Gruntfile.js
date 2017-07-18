@@ -39,6 +39,7 @@ module.exports = function(grunt) {
 
   var pkg = grunt.file.readJSON('package.json');
   var semVer = semver.parse(pkg.version);
+  var conditionalify = require('browserify-conditionalify');
   pkg.pinnedVersion = semVer.major;
   var banner = "/*!" +
   " * Snowplow - The world's most powerful web analytics platform\n" +
@@ -92,7 +93,22 @@ module.exports = function(grunt) {
     browserify: {
       main: {
         files: {
-          'dist/bundle-mint.js': ['src/js/init.js']
+          'dist/bundle.js': ['src/js/init.js']
+        },
+        options: {
+          transform: [
+            [conditionalify, {
+              definitions: {
+                supportAugur: false,
+                supportErrorTracking: false,
+                supportFormTracking: false,
+                supportLinkTracking: false,
+                supportOptimizely: false,
+                supportParrable: false,
+                supportPerformanceTiming: false
+              }
+            }]
+          ]
         }
       },
       test: {
