@@ -93,7 +93,7 @@ module.exports = function(grunt) {
     browserify: {
       main: {
         files: {
-          'dist/bundle.js': ['src/js/init.js']
+          'dist/bundle-mint.js': ['src/js/init.js']
         },
         options: {
           transform: [
