@@ -389,4 +389,25 @@
 		return isNaN(result) ? undefined : result;
 	}
 
+	/**
+	 * Returns true if script is in iframe
+	 */
+	object.inIframe = function(windowAlias) {
+		try {
+			return windowAlias.self !== windowAlias.top;
+		} catch (e) {
+			return true;
+		}
+	}
+
+	/**
+	 * Returns page url even if the script is embedded inside iframe (1 level is allowed)
+	 */
+	object.getPageUrl = function(windowAlias, documentAlias) {
+		if (object.inIframe(windowAlias)) {
+			return documentAlias.referrer;
+		}
+		return windowAlias.location.href;
+	}
+
 }());
