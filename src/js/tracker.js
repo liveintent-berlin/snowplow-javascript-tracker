@@ -108,7 +108,7 @@
 			navigatorAlias = navigator,
 
 			// Current URL and Referrer URL
-			locationArray = proxies.fixupUrl(documentAlias.domain, windowAlias.location.href, helpers.getReferrer()),
+			locationArray = proxies.fixupUrl(documentAlias.domain, helpers.getPageUrl(windowAlias, documentAlias), helpers.getReferrer()),
 			domainAlias = helpers.fixupDomain(locationArray[0]),
 			locationHrefAlias = locationArray[1],
 			configReferrerUrl = locationArray[2],
@@ -352,7 +352,7 @@
 		 * Recalculate the domain, URL, and referrer
 		 */
 		function refreshUrl() {
-			locationArray = proxies.fixupUrl(documentAlias.domain, windowAlias.location.href, helpers.getReferrer());
+			locationArray = proxies.fixupUrl(documentAlias.domain, helpers.getPageUrl(windowAlias, documentAlias), helpers.getReferrer());
 
 			// If this is a single-page app and the page URL has changed, then:
 			//   - if the new URL's querystring contains a "refer(r)er" parameter, use it as the referrer
