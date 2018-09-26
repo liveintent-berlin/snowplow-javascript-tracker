@@ -1,5 +1,5 @@
 {
-  "name": "snowplow-tracker",
+  "name": "snowplow-tracker-mint-branch",
   "version": "2.9.2",
   "lockfileVersion": 1,
   "requires": true,
@@ -409,6 +409,15 @@
         "browserify-aes": "1.1.1",
         "browserify-des": "1.0.0",
         "evp_bytestokey": "1.0.3"
+      }
+    },
+    "browserify-conditionalify": {
+      "version": "1.0.0",
+      "resolved": "https://registry.npmjs.org/browserify-conditionalify/-/browserify-conditionalify-1.0.0.tgz",
+      "integrity": "sha1-DQ6iDRlT3ffQ0qzwyXUjkJoIQeE=",
+      "dev": true,
+      "requires": {
+        "through": "2.3.8"
       }
     },
     "browserify-des": {
