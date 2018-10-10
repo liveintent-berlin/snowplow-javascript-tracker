@@ -28,5 +28,3 @@ aws.json
 # Vagrant
 .vagrant
 VERSION
-
-src/js/lib_managed
